@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abril Fatface", serif;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #333;
+  margin-top: 10rem;
+}
+
+.color-input {
+  max-width: 25%;
+  width: 100%;
+  padding: 0.3rem;
+  box-sizing: content-box;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+}
