@@ -1,19 +1,30 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div><h1 class="heading" #headingEle>Hello Angular</h1></div>
 
-<style>
-  :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-</style>
+<div class="container">
+  <form>
+    <div class="input-wrapper">
+      <label for="Text_color">Change the Text Color</label>
+      <input
+        type="color"
+        class="color-input"
+        id="Text_color"
+        (input)="onTextColorChange()"
+        #inputElementText
+      />
+    </div>
+
+    <div class="input-wrapper">
+      <label for="choose_box_color">Change the Background Color</label>
+      <input
+        type="color"
+        class="color-input"
+        name=""
+        id="choose_box_color"
+        (input)="onBoxColorChange()"
+        #inputElementBox
+      />
+    </div>
+  </form>
+
+  <div class="box" #boxElement></div>
+</div>
